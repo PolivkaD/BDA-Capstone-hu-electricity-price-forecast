@@ -1,36 +1,29 @@
-# BDA-Capstone-hu-electricity-price-forecast
-MSc IT for Business Data Analytics – Hungarian day-ahead electricity price forecasting project
-
-# Hungarian Day-Ahead Electricity Price Forecasting (BDA Capstone Project)
+# Hungarian Day-Ahead Electricity Price Forecasting (BDA Capstone)
 
 MSc in IT for Business Data Analytics – Business Data Analytics Project  
-Author: Dávid Polivka  
+Author: Dávid Polivka (PolivkaD)
 
-## Project overview
+## Overview
 
-This repository contains the code for my Business Data Analytics Project.  
-The goal is to forecast **day-ahead electricity prices in the Hungarian (HUPX) market** using
-ENTSO-E data, weather variables (ERA5), and selected macro / fuel price indicators.
+This repository contains the code and project structure for my Business Data Analytics Capstone Project.  
+The goal is to forecast **day-ahead electricity prices in the Hungarian (HUPX) market** using:
 
-The main objectives are:
-- collect and clean ENTSO-E and weather data for Hungary and the region,
-- explore the relationship between load, generation mix, weather and prices,
-- build baseline and advanced ML/TS forecasting models,
-- evaluate model performance with strict out-of-sample validation,
-- derive business-relevant insights for market participants.
+- ENTSO-E market and system data
+- Weather data (e.g. ERA5)
+- Selected fuel and CO₂ price indicators
 
-## Repository structure
+## Repo structure
 
-- `data/` – raw and processed data (not included in GitHub; stored locally only).
-- `notebooks/` – Jupyter notebooks for EDA, feature engineering and modelling.
-- `src/` – reusable Python modules (data loading, feature engineering, modelling).
-- `reports/figures/` – figures used in the written report.
-- `requirements.txt` – Python dependencies for reproducing the environment.
+- `data/` – raw and processed data (kept locally, not pushed to GitHub)
+- `notebooks/` – Jupyter notebooks for EDA, feature engineering and modelling
+- `src/` – reusable Python code (data loading, feature engineering, models)
+- `reports/` – exported figures and other assets for the written report
 
-## How to run
+## Next steps
 
-1. Create and activate a Python environment (Python 3.10+ recommended).
-2. Install dependencies:
+1. Collect and clean ENTSO-E and weather data.
+2. Explore relationships between load, generation mix, weather and prices.
+3. Build baseline forecasting models and more advanced ML models.
+4. Evaluate models with proper time-series validation.
+5. Translate findings into business-relevant insights.
 
-   ```bash
-   pip install -r requirements.txt
